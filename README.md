@@ -4,7 +4,7 @@ This application provides access to [GitHub](https://github.com/) and lets you s
 
 This is a fork of [OctoDroid](https://github.com/slapperwan/gh4a) which retains it's quality Holo-style interface, with some backported API fixes. Debranding is for personal choice.
 
-The license status of this fork is indeterminate, I have filed a request for clarified licensing here: https://github.com/slapperwan/gh4a/issues/242
+The license status of this fork is indeterminate, I have filed a request for clarified licensing [here](https://github.com/slapperwan/gh4a/issues/242), though it appears to be Apache 2 licensed based on the comments on the top of most of the code files.
 
 
 Main features
