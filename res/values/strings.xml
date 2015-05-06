@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OctoDroid</string>
+    <string name="app_name">Github</string>
 
     <!-- Common -->
     <string name="record_not_found">%1$s not found</string>

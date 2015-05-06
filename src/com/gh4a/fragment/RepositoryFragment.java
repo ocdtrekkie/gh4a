@@ -51,6 +51,7 @@ import com.gh4a.utils.UiUtils;
 import com.github.mobile.util.HtmlUtils;
 import com.github.mobile.util.HttpImageGetter;
 
+import org.eclipse.egit.github.core.Permissions;
 import org.eclipse.egit.github.core.Repository;
 
 public class RepositoryFragment extends ProgressFragment implements OnClickListener {
@@ -203,6 +204,12 @@ public class RepositoryFragment extends ProgressFragment implements OnClickListe
         mContentView.findViewById(R.id.tv_downloads_label).setOnClickListener(this);
         mContentView.findViewById(R.id.tv_releases_label).setOnClickListener(this);
 
+        Permissions permissions = mRepository.getPermissions();
+        updateClickableLabel(R.id.tv_collaborators_label,
+                permissions != null && permissions.hasPushAccess());
+        updateClickableLabel(R.id.tv_downloads_label, mRepository.isHasDownloads());
+        updateClickableLabel(R.id.tv_wiki_label, mRepository.isHasWiki());
+
         TextView tvStargazersCount = (TextView) mContentView.findViewById(R.id.tv_stargazers_count);
         tvStargazersCount.setText(String.valueOf(mRepository.getWatchers()));
 
@@ -229,6 +236,16 @@ public class RepositoryFragment extends ProgressFragment implements OnClickListe
 
         if (!mRepository.isHasWiki()) {
             mContentView.findViewById(R.id.tv_wiki_label).setVisibility(View.GONE);
+        }
+    }
+
+    private void updateClickableLabel(int id, boolean enable) {
+        View view = mContentView.findViewById(id);
+        if (enable) {
+            view.setOnClickListener(this);
+            view.setVisibility(View.VISIBLE);
+        } else {
+            view.setVisibility(View.GONE);
         }
     }
 
