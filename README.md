@@ -1,14 +1,10 @@
-OctoDroid
+Github (OctoDroid fork)
 =========
-This application provides access to [GitHub](https://github.com/) and lets you stay connected with your network
+This application provides access to [GitHub](https://github.com/) and lets you stay connected with your network.
 
-![Octodroid](https://raw.githubusercontent.com/slapperwan/gh4a/master/res/drawable-xxhdpi/octodroid.png)
+This is a fork of [OctoDroid](https://github.com/slapperwan/gh4a) which retains it's quality Holo-style interface, with some backported API fixes. Debranding is for personal choice.
 
-[![Build Status](https://drone.io/github.com/slapperwan/gh4a/status.png)](https://drone.io/github.com/slapperwan/gh4a/latest)
-
-Download
---------
-[![Download OctoDroid from Google Play](http://www.android.com/images/brand/android_app_on_play_large.png)](https://play.google.com/store/apps/details?id=com.gh4a) [![Download OctoDroid from F-Droid.org](https://raw.githubusercontent.com/kageiit/images-host/master/badges/fdroid-badge.png)](http://f-droid.org/repository/browse/?fdfilter=octodroid&fdid=com.gh4a) [![Download latest debug from drone.io](https://raw.githubusercontent.com/kageiit/images-host/master/badges/drone-io-badge.png)](https://drone.io/github.com/slapperwan/gh4a/files/build/outputs/apk/gh4a-debug.apk)
+The license status of this fork is indeterminate, I have filed a request for clarified licensing here: https://github.com/slapperwan/gh4a/issues/242
 
 
 Main features
@@ -85,6 +81,8 @@ Open Source Libraries
 
 Contributions
 -------------
+* pullrequest.svg is released under CC BY 3.0 by Richard Slater: https://thenounproject.com/term/pull-request/116189/
+
 * [kageiit](https://github.com/kageiit) - Improvements and bug fixes
 * [maniac103](https://github.com/maniac103) - Improvements, bug fixes and new features
 * [ARoiD](https://github.com/ARoiD) - Testing
