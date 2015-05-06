@@ -7,6 +7,8 @@ build
 *.properties
 *.iml
 
+*.apk
+
 # Crashlytics generated files
 assets/crashlytics-build.properties
 res/values/com_crashlytics_export_strings.xml
